@@ -1,4 +1,4 @@
-FROM devwithlando/php:8.3-apache-4
+FROM devwithlando/php:8.3-apache-5
 
 RUN apt-get update -qq && \
     # Remove preinstalled ImageMagick.
