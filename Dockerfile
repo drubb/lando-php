@@ -6,7 +6,7 @@ RUN apt-get update -qq && \
     apt-get autoremove -y -qq && \
     rm -rf /etc/ImageMagick-6 && \
     # Add some additional CLI Tools. \
-    apt-get install -y -qq jpegoptim optipng pngquant webp sudo mycli && \
+    apt-get install -y -qq libjpeg-dev libpng-dev libwebp-dev jpegoptim optipng pngquant webp sudo mycli && \
     # Install GhostScript, for PDF generation.
     apt-get install -y -qq ghostscript && \
     # Build ImageMagick 7
